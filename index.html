@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Furni-Place - Place Furniture in Your Home</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background-color: #1C1C1E;
+      color: #FFFFFF;
+      line-height: 1.6;
+    }
+
+    .container {
+      max-width: 100%;
+      margin: 0;
+      padding: 0;
+    }
+
+    .hero {
+      width: 100%;
+      height: 100vh;
+      background: url('31378f03c4d82e5a9724142c7a52fddd.jpg') center center / cover no-repeat;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      text-align: center;
+      color: white;
+    }
+
+    @media (max-width: 768px) {
+      .hero {
+        background: url('FURNI-PLACE (1).png') center center / cover no-repeat;
+      }
+    }
+
+    .hero::after {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: rgba(0, 0, 0, 0.4);
+      z-index: 0;
+    }
+
+    .hero h1, .hero p, .download-btn {
+      position: relative;
+      z-index: 1;
+    }
+
+    .hero h1 {
+      font-size: 64px;
+      margin-bottom: 20px;
+    }
+
+    .hero p {
+      font-size: 24px;
+      margin-bottom: 40px;
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .download-btn {
+      display: inline-block;
+      background-color: #38b2ac;
+      color: white;
+      font-size: 20px;
+      padding: 18px 60px;
+      border-radius: 40px;
+      text-decoration: none;
+      transition: all 0.3s ease;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+    }
+
+    .download-btn:hover {
+      background-color: #319795;
+      transform: translateY(-5px);
+      box-shadow: 0 15px 40px rgba(0, 0, 0, 0.6);
+    }
+
+    .features {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin: 60px 20px;
+      gap: 20px;
+    }
+
+    .feature {
+      flex: 1 1 250px;
+      margin: 10px;
+      padding: 30px;
+      background-color: #2C2C2E;
+      border-radius: 15px;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+      transition: all 0.3s ease;
+    }
+
+    .feature:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6);
+    }
+
+    .feature h3 {
+      margin-bottom: 15px;
+      color: #38b2ac;
+    }
+
+    .app-images {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 20px;
+      margin: 40px 20px;
+    }
+
+    .app-image {
+      width: 100%;
+      max-width: 240px;
+      border-radius: 15px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+      transition: all 0.3s ease;
+    }
+
+    .app-image:hover {
+      transform: scale(1.05);
+    }
+
+    .how-it-works, .installation {
+      background-color: #2C2C2E;
+      padding: 40px 20px;
+      border-radius: 15px;
+      margin: 40px 20px;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+    }
+
+    .how-it-works h2, .installation h2 {
+      margin-bottom: 20px;
+      color: #38b2ac;
+      font-size: 28px;
+      text-align:center;
+      max-width: 500px;
+      margin: 0 auto;
+    }
+
+    .how-it-works ol {
+      text-align: center;
+      max-width: 500px;
+      margin: 0 auto;
+    }
+
+    .how-it-works li {
+      margin-bottom: 15px;
+    }
+
+    .installation p {
+      margin-bottom: 10px;
+      text-align: center;
+      max-width: 500px;
+      margin: 0 auto;
+      
+    }
+
+    footer {
+      margin-top: 60px;
+      padding: 20px;
+      text-align: center;
+      color: #71717A;
+      font-size: 14px;
+    }
+
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <section class="hero">
+      <h1>Furni-Place</h1>
+      <p>Experience next-level AR shopping. Place realistic furniture in your room with precision and style.</p>
+      <a href="app-debug.apk" class="download-btn" download>Download APK</a>
+    </section>
+
+    <div class="app-images">
+      <img src="/api/placeholder/240/400" alt="App Screenshot" class="app-image" />
+      <img src="/api/placeholder/240/400" alt="AR Sofa in Room" class="app-image" />
+    </div>
+
+    <div class="features">
+      <div class="feature">
+        <h3>Immersive AR</h3>
+        <p>See furniture come to life in your space with true-to-scale 3D models.</p>
+      </div>
+
+      <div class="feature">
+        <h3>Massive Catalog</h3>
+        <p>Explore an extensive collection of designer furniture, all at your fingertips.</p>
+      </div>
+
+      <div class="feature">
+        <h3>Save Layouts</h3>
+        <p>Plan entire rooms and save your favorite designs for later review.</p>
+      </div>
+    </div>
+
+    <section class="installation">
+      <h2>How to Install</h2>
+      <p>Download the APK file</p>
+      <p>Locate and tap the file on your Android device</p>
+      <p>Enable "Install from Unknown Sources" if prompted</p>
+      <p>Complete installation and launch FurniView AR</p>
+    </section>
+
+    <section class="how-it-works">
+      <h2>How It Works</h2>
+      <ol>
+        <p>Scan your room with your phone's camera</p>
+        <p>Browse our catalog and pick furniture</p>
+        <p>Place it in your room virtually in real-time</p>
+        <p>Customize orientation and colors</p>
+        <p>Save and share your room layouts</p>
+      </ol>
+    </section>
+
+    
+
+    <footer>
+      <p>&copy; 2025 FurniView AR. All rights reserved.</p>
+      <p>Contact: support@furniviewar.com</p>
+    </footer>
+  </div>
+</body>
+</html>
